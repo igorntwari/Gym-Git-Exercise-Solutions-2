@@ -32,4 +32,20 @@ To https://github.com/igorntwari/Git-Exercises-2.git
 branch 'main' set up to track 'origin/main'.
 
 igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
-$
+$igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (dev)
+$ git checkout -b test
+Switched to a new branch 'test'
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (test)
+$ git checkout dev
+Switched to branch 'dev'
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (dev)
+$ git branch -d test
+Deleted branch test (was f08657d).
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (dev)
