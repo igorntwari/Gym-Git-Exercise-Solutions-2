@@ -1,0 +1,35 @@
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2
+$ git init
+Initialized empty Git repository in C:/Users/igor/Desktop/Git-Exercise-2/.git/
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (master)
+$ git branch -M main
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git add .
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git remote add origin https://github.com/igorntwari/Git-Exercises-2.git
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git commit -m "created file and made some changes"
+[main (root-commit) f08657d] created file and made some changes
+ 2 files changed, 17 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 556 bytes | 278.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/igorntwari/Git-Exercises-2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$
