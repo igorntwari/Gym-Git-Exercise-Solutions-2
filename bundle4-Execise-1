@@ -1,0 +1,184 @@
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$
+ *  History restored 
+
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git remote add git-copy https://github.com/igorntwari/Bundle-4-Exercise-1.git
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git remote -v
+git-copy        https://github.com/igorntwari/Bundle-4-Exercise-1.git (fetch)
+git-copy        https://github.com/igorntwari/Bundle-4-Exercise-1.git (push)
+origin  https://github.com/igorntwari/Git-Exercises-2.git (fetch)
+origin  https://github.com/igorntwari/Git-Exercises-2.git (push)
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ ls
+faq.html  index.html  service.html  services.html  styles.css
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ touch homr.html
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git add .
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git commit - m "made changes in home page "
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'made changes in home page ' did not match any file(s) known to git
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git commit -m "made changes in home page "
+[main 780fd24] made changes in home page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 home.html
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git push origin main 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 443 bytes | 443.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: Bypassed rule violations for refs/heads/main:
+remote:
+remote: - Changes must be made through a pull request.
+remote:
+To https://github.com/igorntwari/Git-Exercises-2.git
+   952f8f2..780fd24  main -> main
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git pull origin main
+From https://github.com/igorntwari/Git-Exercises-2
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git push origin main
+Everything up-to-date
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git fetch 
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git clone https://github.com/igorntwari/Bundle-4-Exercise-1.git
+Cloning into 'Bundle-4-Exercise-1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git push git-copy main
+To https://github.com/igorntwari/Bundle-4-Exercise-1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/igorntwari/Bundle-4-Exercise-1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git pull git-copy main
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 370 bytes | 1024 bytes/s, done.
+From https://github.com/igorntwari/Bundle-4-Exercise-1
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> git-copy/main
+fatal: refusing to merge unrelated histories
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git push git-copy main
+To https://github.com/igorntwari/Bundle-4-Exercise-1.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/igorntwari/Bundle-4-Exercise-1.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ it merge git-copy/main
+bash: it: command not found
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git merge git-copy/main
+fatal: refusing to merge unrelated histories
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git push git-copy main
+To https://github.com/igorntwari/Bundle-4-Exercise-1.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/igorntwari/Bundle-4-Exercise-1.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ git remote -v
+git-copy        https://github.com/igorntwari/Bundle-4-Exercise-1.git (fetch)
+git-copy        https://github.com/igorntwari/Bundle-4-Exercise-1.git (push)
+origin  https://github.com/igorntwari/Git-Exercises-2.git (fetch)
+origin  https://github.com/igorntwari/Git-Exercises-2.git (push)
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2 (main)
+$ cd Bundle-4-Exercise-1/
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2/Bundle-4-Exercise-1 (main)
+$ git push git-copy main
+fatal: 'git-copy' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2/Bundle-4-Exercise-1 (main)
+$ git commit -m "made some changes "
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2/Bundle-4-Exercise-1 (main)
+$ git add .
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2/Bundle-4-Exercise-1 (main)
+$ git commit -m "made some changes "
+[main 0275562] made some changes
+ 1 file changed, 1 insertion(+)
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2/Bundle-4-Exercise-1 (main)
+$ git push git-copy main
+fatal: 'git-copy' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Git-Exercise-2/Bundle-4-Exercise-1 (main)
+$ git push origin main 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 323 bytes | 323.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/igorntwari/Bundle-4-Exercise-1.git
+   53c6173..0275562  main -> main
+
+igor@
