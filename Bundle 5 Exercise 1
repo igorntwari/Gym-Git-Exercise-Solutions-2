@@ -1,0 +1,39 @@
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5
+$ git clone https://github.com/igorntwari/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+Receiving objects: 100% (107/107), 1.95 MiB | 63.00 KiB/s, done
+Resolving deltas:  20% (1/5)
+Resolving deltas: 100% (5/5), done.
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5
+$ git init
+Initialized empty Git repository in C:/Users/igor/Desktop/Bundle5/.git/
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5 (master)
+$ cd git-cafe-exercise/
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5/git-cafe-exercise (main)
+$ git add .
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5/git-cafe-exercise (main)
+$ git commit -m "made some changes on landing page "
+[main cdf62d6] made some changes on landing page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5/git-cafe-exercise (main)
+$ git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 339 bytes | 339.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/igorntwari/git-cafe-exercise.git
+   d1d3f9c..cdf62d6  main -> main
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5/git-cafe-exercise (main)
+$
