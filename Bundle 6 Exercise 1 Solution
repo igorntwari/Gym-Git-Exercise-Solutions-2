@@ -1,0 +1,41 @@
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5 (master)
+$ cd git-cafe-exercise/
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5/git-cafe-exercise (main)
+$ git checkout --help
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5/git-cafe-exercise (main)
+$ git checkout -b feature
+Switched to a new branch 'feature'
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5/git-cafe-exercise (feature)
+$ touch menu.html
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5/git-cafe-exercise (feature)
+$ git add .
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5/git-cafe-exercise (feature)
+$ git commit -m "created new page "
+[feature 0eb35d5] created new page
+ 1 file changed, 17 insertions(+)
+ create mode 100644 menu.html
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5/git-cafe-exercise (feature)
+$ git push origin feature 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 479 bytes | 479.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/igorntwari/git-cafe-exercise/pull/new/feature
+remote:
+To https://github.com/igorntwari/git-cafe-exercise.git
+ * [new branch]      feature -> feature
+
+igor@DESKTOP-ES7K9H6 MINGW64 ~/Desktop/Bundle5/git-cafe-exercise (feature)
+$
